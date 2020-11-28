@@ -1,0 +1,220 @@
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  margin-top: 100px;
+  opacity: 0.8;
+  border-radius: 20px !important;
+  color: whitesmoke;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgb(230, 45, 125) 0%,
+    rgb(23, 47, 75) 100%
+  );
+  transition: all 0.8s ease;
+}
+.jumbotron:hover {
+  border-radius: 60px !important;
+  opacity: 10;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+body {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+img {
+  border-radius: none;
+  transition: all ease 0.8s;
+}
+img:hover {
+  border-radius: 20px;
+  transform: scale(1.1);
+}
+.album {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.text-muted {
+  color: whitesmoke !important;
+}
+.card-body {
+  transition: all 0.4s ease;
+}
+.card-body:hover {
+  color: whitesmoke;
+  background: rgb(18, 25, 49) 0% !important;
+}
+
+nav {
+  background-color: rgba(128, 30, 87, 0.226);
+  backdrop-filter: blur(3px);
+}
+button {
+  color: white !important;
+  border: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #dd7edd, #b27edd, #9370e6, #8791e4);
+  background-size: 400%;
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 20px;
+}
+button:hover {
+  transform: scale(1.1);
+  color: whitesmoke;
+  text-decoration: none;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #dd7edd, #b27edd, #9370e6, #8791e4);
+  background-size: 400%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+.coolerButton {
+  transform: scale(1.1);
+  border: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  transform: translate(0%, -0%);
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #4b1c88, #c50d8e, #0c1991);
+  background-size: 400%;
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 40px;
+}
+.coolerButton:hover {
+  color: whitesmoke;
+  text-decoration: none;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.coolerButton:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #4b1c88, #c50d8e, #0c1991);
+  background-size: 400%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.coolerButton:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(238, 174, 202, 1) 0%;
+  }
+  100% {
+    background: rgba(148, 187, 233, 1) 100%;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: rgba(238, 174, 202, 1) 0%;
+  }
+  100% {
+    background: rgba(148, 187, 233, 1) 100%;
+  }
+}
